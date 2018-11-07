@@ -3,6 +3,7 @@
 
 I used this video as a guide: https://www.youtube.com/watch?v=SuoSXVqjyfc and changed it to work with nmap
 
+(click on raw)
 
 
 How to check if someone is at home
