@@ -10,7 +10,7 @@ I used this video as a guide: https://www.youtube.com/watch?v=SuoSXVqjyfc and ch
 
 How to check if someone is at home
 
-Need:
+required:
 - Home Assistant
 - Node red with home assistant pallet (node-red-contrib-home-assistant-websocket)
 - Wifi
