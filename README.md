@@ -51,8 +51,13 @@ known_devices.yaml:
 # more iphones ....
   
   
-the rest goes with node-red
- 
+the rest goes with node-red:
+----------------------------
+copy / paste the content (in home-aware-nmap-nodered.txt) in node-red.
+change the device_tracker.000000000000 to your own MAC numbers or click in de node settings and get the device form Home Assistant.
+
+
+
  
     
     
