@@ -38,7 +38,7 @@ with MAC numbers.
 If not generate a empty the file and restart hass
 After a while the MAC numbers will appear.
 
-known_devices.yaml:
+known_devices.yaml will looks like:
 -------------------
 
 # Jan Iphone 6
