@@ -10,7 +10,7 @@ How to check if someone is at home
 
 Need:
 - Home Assistant
-- Node red
+- Node red with home assistant pallet (node-red-contrib-home-assistant-websocket)
 - Wifi
 - Reserved dhcp on mobiles (or static)
 - 3 iphones (or less)
@@ -48,7 +48,7 @@ known_devices.yaml:
   picture:
   track: true
   
-  ....
+# more iphones ....
   
   
 the rest goes with node-red
