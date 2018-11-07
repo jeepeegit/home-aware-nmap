@@ -1,4 +1,4 @@
-# home-aware-nmap
+# home assistant-aware-nmap
 
 
 I used this video as a guide: https://www.youtube.com/watch?v=SuoSXVqjyfc and changed it to work with nmap
