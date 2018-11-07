@@ -1,0 +1,296 @@
+[
+    {
+        "id": "78701ee9.7821b",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "3781e71d.8c9bc",
+        "type": "api-call-service",
+        "z": "78701ee9.7821b",
+        "name": "Home",
+        "server": "88f9d2bf.d46b4",
+        "service_domain": "input_boolean",
+        "service": "turn_on",
+        "data": "{\"entity_id\":\"input_boolean.home_occupied\"}",
+        "mergecontext": "",
+        "x": 290,
+        "y": 300,
+        "wires": [
+            [
+                "f1d2705e.4b8bf8"
+            ]
+        ]
+    },
+    {
+        "id": "db967491.36a968",
+        "type": "server-state-changed",
+        "z": "78701ee9.7821b",
+        "name": "iph5 nmap",
+        "server": "88f9d2bf.d46b4",
+        "entityidfilter": "device_tracker.000000000000",
+        "entityidfiltertype": "substring",
+        "haltifstate": "not_home",
+        "outputinitially": true,
+        "x": 80,
+        "y": 420,
+        "wires": [
+            [
+                "3781e71d.8c9bc"
+            ]
+        ]
+    },
+    {
+        "id": "66cc5931.eb54d",
+        "type": "server-state-changed",
+        "z": "78701ee9.7821b",
+        "name": "iphroos nmap",
+        "server": "88f9d2bf.d46b4",
+        "entityidfilter": "device_tracker.000000000000",
+        "entityidfiltertype": "substring",
+        "haltifstate": "not_home",
+        "outputinitially": true,
+        "x": 90,
+        "y": 360,
+        "wires": [
+            [
+                "3781e71d.8c9bc"
+            ]
+        ]
+    },
+    {
+        "id": "f1d2705e.4b8bf8",
+        "type": "debug",
+        "z": "78701ee9.7821b",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 470,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "e2b8f78a.54728",
+        "type": "api-current-state",
+        "z": "78701ee9.7821b",
+        "name": "Roos Home",
+        "server": "88f9d2bf.d46b4",
+        "halt_if": "home",
+        "override_topic": true,
+        "override_payload": true,
+        "entity_id": "device_tracker.000000000000",
+        "x": 470,
+        "y": 220,
+        "wires": [
+            [
+                "d7abef08.090488"
+            ]
+        ]
+    },
+    {
+        "id": "d7abef08.090488",
+        "type": "api-call-service",
+        "z": "78701ee9.7821b",
+        "name": "Away",
+        "server": "88f9d2bf.d46b4",
+        "service_domain": "input_boolean",
+        "service": "turn_off",
+        "data": "{   \"entity_id\": \"input_boolean.home_occupied\" }",
+        "mergecontext": "",
+        "x": 670,
+        "y": 160,
+        "wires": [
+            [
+                "15cf136b.19a825"
+            ]
+        ]
+    },
+    {
+        "id": "30207409.fdb114",
+        "type": "server-state-changed",
+        "z": "78701ee9.7821b",
+        "name": "iph5 nmap",
+        "server": "88f9d2bf.d46b4",
+        "entityidfilter": "device_tracker.000000000000",
+        "entityidfiltertype": "substring",
+        "haltifstate": "home",
+        "outputinitially": true,
+        "x": 80,
+        "y": 220,
+        "wires": [
+            [
+                "d721787e.2955f8"
+            ]
+        ]
+    },
+    {
+        "id": "512c8803.71e418",
+        "type": "server-state-changed",
+        "z": "78701ee9.7821b",
+        "name": "iphroos nmap",
+        "server": "88f9d2bf.d46b4",
+        "entityidfilter": "device_tracker.000000000000",
+        "entityidfiltertype": "substring",
+        "haltifstate": "home",
+        "outputinitially": true,
+        "x": 90,
+        "y": 160,
+        "wires": [
+            [
+                "211575ef.8dc4fa"
+            ]
+        ]
+    },
+    {
+        "id": "15cf136b.19a825",
+        "type": "debug",
+        "z": "78701ee9.7821b",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 830,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "a562082.4367bf8",
+        "type": "server-state-changed",
+        "z": "78701ee9.7821b",
+        "name": "iphjan nmap",
+        "server": "88f9d2bf.d46b4",
+        "entityidfilter": "device_tracker.000000000000",
+        "entityidfiltertype": "substring",
+        "haltifstate": "not_home",
+        "outputinitially": true,
+        "x": 90,
+        "y": 300,
+        "wires": [
+            [
+                "3781e71d.8c9bc"
+            ]
+        ]
+    },
+    {
+        "id": "84a47dd9.748f9",
+        "type": "server-state-changed",
+        "z": "78701ee9.7821b",
+        "name": "iphjan nmap",
+        "server": "88f9d2bf.d46b4",
+        "entityidfilter": "device_tracker.000000000000",
+        "entityidfiltertype": "substring",
+        "haltifstate": "home",
+        "outputinitially": true,
+        "x": 90,
+        "y": 100,
+        "wires": [
+            [
+                "af268395.e92f"
+            ]
+        ]
+    },
+    {
+        "id": "d751aa53.0afd9",
+        "type": "api-current-state",
+        "z": "78701ee9.7821b",
+        "name": "iph5 Home",
+        "server": "88f9d2bf.d46b4",
+        "halt_if": "home",
+        "override_topic": true,
+        "override_payload": true,
+        "entity_id": "device_tracker.000000000000",
+        "x": 470,
+        "y": 100,
+        "wires": [
+            [
+                "d7abef08.090488"
+            ]
+        ]
+    },
+    {
+        "id": "d721787e.2955f8",
+        "type": "api-current-state",
+        "z": "78701ee9.7821b",
+        "name": " Jan ip6 Home",
+        "server": "88f9d2bf.d46b4",
+        "halt_if": "home",
+        "override_topic": true,
+        "override_payload": true,
+        "entity_id": "device_tracker.000000000000",
+        "x": 280,
+        "y": 220,
+        "wires": [
+            [
+                "e2b8f78a.54728"
+            ]
+        ]
+    },
+    {
+        "id": "af268395.e92f",
+        "type": "api-current-state",
+        "z": "78701ee9.7821b",
+        "name": "Roos Home",
+        "server": "88f9d2bf.d46b4",
+        "halt_if": "home",
+        "override_topic": true,
+        "override_payload": true,
+        "entity_id": "device_tracker.000000000000",
+        "x": 270,
+        "y": 100,
+        "wires": [
+            [
+                "d751aa53.0afd9"
+            ]
+        ]
+    },
+    {
+        "id": "fc3a8a8d.add33",
+        "type": "api-current-state",
+        "z": "78701ee9.7821b",
+        "name": "iph5 Home",
+        "server": "88f9d2bf.d46b4",
+        "halt_if": "home",
+        "override_topic": true,
+        "override_payload": true,
+        "entity_id": "device_tracker.000000000000",
+        "x": 470,
+        "y": 160,
+        "wires": [
+            [
+                "d7abef08.090488"
+            ]
+        ]
+    },
+    {
+        "id": "211575ef.8dc4fa",
+        "type": "api-current-state",
+        "z": "78701ee9.7821b",
+        "name": " Jan ip6 Home",
+        "server": "88f9d2bf.d46b4",
+        "halt_if": "home",
+        "override_topic": true,
+        "override_payload": true,
+        "entity_id": "device_tracker.000000000000",
+        "x": 280,
+        "y": 160,
+        "wires": [
+            [
+                "fc3a8a8d.add33"
+            ]
+        ]
+    },
+    {
+        "id": "88f9d2bf.d46b4",
+        "type": "server",
+        "z": "",
+        "name": "Home Assistant",
+        "legacy": false
+    }
+]
