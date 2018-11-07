@@ -1,4 +1,4 @@
-# home assistant-aware-nmap
+# home aware with home assistant, nmap and node-red
 
 
 (Click on raw for readability and copy/paste)
