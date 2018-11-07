@@ -1,7 +1,7 @@
 # home assistant-aware-nmap
 
 
-(Click on raw for readability)
+(Click on raw for readability and copy/paste)
 
 
 I used this video as a guide: https://www.youtube.com/watch?v=SuoSXVqjyfc and changed it to work with nmap
