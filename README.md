@@ -32,12 +32,12 @@ device_tracker:
       - 192.168.1.20
       - 192.168.1.21
       - 192.168.1.23
-# interval_seconds: 30 set the seconds to scan
+# interval_seconds: xx set the seconds to scan interval
     interval_seconds: 30
-# home_interval: 30 sets the minutes duration that a device
+# home_interval: xx sets the minutes duration that a device
 # is marked “Home” after it is found during a scan
     home_interval: 10
-# consider_home: 180 Seconds to wait till marking someone as
+# consider_home: xx Seconds to wait till marking someone as
 # not home after not being seen. 3 minutes: 180, 0:03, 0:03:00
 #    consider_home: 15
 
