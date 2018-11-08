@@ -36,10 +36,10 @@ device_tracker:
     interval_seconds: 30
 # home_interval: 30 sets the duration that a device
 # is marked “Home” after it is found during a scan
-    home_interval: 15
+    home_interval: 900
 # consider_home: 180 Seconds to wait till marking someone as
 # not home after not being seen. 3 minutes: 180, 0:03, 0:03:00
-    consider_home: 15
+#    consider_home: 15
 
     
 After restarting hass it will create a known_devices.yaml file
