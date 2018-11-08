@@ -1,10 +1,8 @@
-<pre>
+
 
 # home aware with home assistant, nmap and node-red
 
-
-(Click on raw for readability and copy/paste)
-
+<pre>
 
 I used this video as a guide: https://www.youtube.com/watch?v=SuoSXVqjyfc and changed it to work with nmap
 
