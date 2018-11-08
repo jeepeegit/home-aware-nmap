@@ -26,12 +26,12 @@ Edit configuration.yaml:
 device_tracker:
 #  - platform: ping
 #    hosts:
-#      iphjan: 192.168.10.20
+#      iphjan: 192.168.1.20
   - platform: nmap_tracker
     hosts:
-      - 192.168.10.20
-      - 192.168.10.21
-      - 192.168.10.23
+      - 192.168.1.20
+      - 192.168.1.21
+      - 192.168.1.23
 # interval_seconds: 30 set the seconds to scan
     interval_seconds: 30
 # home_interval: 30 sets the duration that a device
