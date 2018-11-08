@@ -4,7 +4,7 @@
 
 <pre>
 
-I used this video as a guide: https://www.youtube.com/watch?v=SuoSXVqjyfc and changed it to work with nmap
+I used this great video as a guide: https://www.youtube.com/watch?v=SuoSXVqjyfc and changed it to work with nmap.
 
 
 
