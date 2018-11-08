@@ -32,6 +32,7 @@ device_tracker:
       - 192.168.1.20
       - 192.168.1.21
       - 192.168.1.23
+    track_new_devices: no
 # interval_seconds: xx set the seconds to scan interval
     interval_seconds: 30
 # home_interval: xx sets the minutes duration that a device
