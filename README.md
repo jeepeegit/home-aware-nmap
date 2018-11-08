@@ -20,18 +20,27 @@ required:
 
 Edit configuration.yaml:
 ------------------------
+# *************************************************************
+# Device tracker scans devices en put them in know_devices.yaml
+# *************************************************************
 device_tracker:
+#  - platform: ping
+#    hosts:
+#      iphjan: 192.168.10.20
   - platform: nmap_tracker
     hosts:
-      - 192.168.1.20
-      - 192.168.1.21
-      - 192.168.1.23
+      - 192.168.10.20
+      - 192.168.10.21
+      - 192.168.10.23
+# interval_seconds: 30 set the seconds to scan
+    interval_seconds: 30
+# home_interval: 30 sets the duration that a device
+# is marked “Home” after it is found during a scan
+    home_interval: 15
+# consider_home: 180 Seconds to wait till marking someone as
+# not home after not being seen. 3 minutes: 180, 0:03, 0:03:00
+    consider_home: 15
 
-input_boolean:
-  home_occupied:
-    name: Home occupied
-    initial: off
-    icon: mdi:home
     
 After restarting hass it will create a known_devices.yaml file
 with MAC numbers.
