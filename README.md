@@ -1,3 +1,5 @@
+<pre>
+
 # home aware with home assistant, nmap and node-red
 
 
@@ -68,6 +70,11 @@ copy / paste the content (in home-aware-nmap-nodered.txt) in node-red.
 change the device_tracker.000000000000 to your own MAC numbers or click in de node settings and get the device from Home Assistant.
 
 
+
+
+
+
+<pre>
 
  
     
