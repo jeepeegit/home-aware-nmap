@@ -21,26 +21,31 @@ required:
 Edit configuration.yaml:
 ------------------------
 # *************************************************************
-# Device tracker scans devices en put them in know_devices.yaml
+# Start Device tracker scans devices en put them in know_devices.yaml
 # *************************************************************
 device_tracker:
 #  - platform: ping
 #    hosts:
-#      iphjan: 192.168.1.20
+#      iphjan: 192.168.10.20
   - platform: nmap_tracker
     hosts:
-      - 192.168.1.20
-      - 192.168.1.21
-      - 192.168.1.23
-    track_new_devices: no
+      - 192.168.10.20
+      - 192.168.10.21
+      - 192.168.10.23
+    new_device_defaults:
+      hide_if_away: false
+#      track_new_devices: false
 # interval_seconds: xx set the seconds to scan interval
     interval_seconds: 30
 # home_interval: xx sets the minutes duration that a device
 # is marked “Home” after it is found during a scan
-    home_interval: 10
+#     home_interval: 10
 # consider_home: xx Seconds to wait till marking someone as
 # not home after not being seen. 3 minutes: 180, 0:03, 0:03:00
 #    consider_home: 15
+# *************************************************************
+# End Device tracker scans devices en put them in know_devices.yaml
+# *************************************************************
 
     
 After restarting hass it will create a known_devices.yaml file
