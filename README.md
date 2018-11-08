@@ -49,8 +49,8 @@ device_tracker:
 
     
 After restarting hass it will create a known_devices.yaml file
-with MAC numbers.
-If not generate a empty the file and restart hass
+with MAC numbers in it.
+If not, generate a empty file and restart hass.
 After a while the MAC numbers will appear.
 
 known_devices.yaml will looks like:
