@@ -1,3 +1,6 @@
+Edit: Add two timers:
+- One 15 min timer so that the away is not immediately active.
+- One "stop timer" to interrupt the 15 min waste timer.
 
 
 # home aware with home assistant, nmap and node-red
